@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { EXAMPLES } from "../data.js";
 import TabButton from "./TabButton/TabButton";
+import Section from "./Section/Section.jsx";
+import Tabs from "./Tabs.jsx";
 
 export default function Examples() {
   const [selectedButton, setSelectedButton] = useState();
@@ -21,35 +23,24 @@ export default function Examples() {
   }
 
   return (
-    <section id="examples">
-      <h2>Examples</h2>
-      <menu>
-        <TabButton
-          isSelected={selectedButton === "components"}
-          onSelect={() => HandleSelect("components")}
-        >
-          Component
-        </TabButton>
-        <TabButton
-          isSelected={selectedButton === "jsx"}
-          onSelect={() => HandleSelect("jsx")}
-        >
-          JAX
-        </TabButton>
-        <TabButton
-          isSelected={selectedButton === "props"}
-          onSelect={() => HandleSelect("props")}
-        >
-          Props
-        </TabButton>
-        <TabButton
-          isSelected={selectedButton === "state"}
-          onSelect={() => HandleSelect("state")}
-        >
-          State
-        </TabButton>
-      </menu>
-      {tabContent}
-    </section>
+    <Section title="Example" id="examples">
+      <Tabs
+        buttons={
+          <>
+            {Object.keys(EXAMPLES).map((key) => (
+              <TabButton
+                key={key}
+                isSelected={selectedButton === key}
+                onSelect={() => HandleSelect(key)}
+              >
+                {EXAMPLES[key].title}
+              </TabButton>
+            ))}
+          </>
+        }
+      >
+        {tabContent}
+      </Tabs>
+    </Section>
   );
 }
