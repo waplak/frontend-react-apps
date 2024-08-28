@@ -1,5 +1,6 @@
 export const PROFILE = {
   name: "Pamitha Lakbodha",
+  firstName: "Pamitha",
   subtitle: "I design and develop web applications",
   intro: "A Software Engineer currently living in Sydney | Australia",
   description:

@@ -3,6 +3,7 @@ import "./index.css";
 import Header from "./components/Header/Header";
 import HomePage from "./components/HomePage/HomePage";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   const aboutRef = useRef(null);
@@ -26,6 +27,9 @@ function App() {
       <HomePage />
       <section ref={aboutRef} id="about">
         <About />
+      </section>
+      <section ref={experienceRef} id="experience">
+        <Experience />
       </section>
     </div>
   );

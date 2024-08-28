@@ -1,10 +1,9 @@
 .about-section {
   padding: 0 20px;
-  padding-top: 20px;
   padding-bottom: 50px;
   background-color: #000000;
   font-family: "Arial", sans-serif;
-  border-bottom: 1px solid #0670fc;
+  border-bottom: 0.5px solid #444445;
 }
 
 .about-container {
@@ -54,21 +53,21 @@ p {
 }
 
 a {
-  color: #64578e;
+  color: #6d8ef0;
   text-decoration: none;
-  border-bottom: 1px solid #64578e;
+  border-bottom: 1px solid #6d8ef0;
 }
 
 a:hover {
-  color: #23b5f3;
-  border-bottom: 1px solid #23b5f3;
+  color: #daf06d;
+  border-bottom: 1px solid #daf06d;
 }
 
 .contact-link {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 10px;
-  color: #23b5f3;
+  color: #6d8ef0;
   font-weight: bold;
 }
 

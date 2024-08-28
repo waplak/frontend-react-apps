@@ -43,6 +43,29 @@ code {
     monospace;
 }
 
+.header-section {
+  padding: 0px 35px;
+  padding-top: 20px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  /* top: 0; */
+  z-index: 9999;
+}
+
+.section-title {
+  font-size: 48px;
+  color: #23b5f3;
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
 /* REACH OUT STYLES START */
 #reach-out {
   /* margin-top: 5px; */
@@ -397,15 +420,6 @@ footer a:hover {
 /* end styles to <footer> */
 
 /* extra titles stylings */
-.section-title {
-  font-size: 48px;
-  color: #75bfb2;
-  border-bottom: 3px solid;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
 
 .primary-border {
   border-color: #0e5259;

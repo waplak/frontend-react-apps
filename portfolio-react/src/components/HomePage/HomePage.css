@@ -8,7 +8,7 @@
   color: #ccd6f6;
   font-family: "Arial", sans-serif;
   position: relative;
-  border-bottom: 1px solid #0670fc;
+  border-bottom: 0.5px solid #444445;
 }
 
 .content {
