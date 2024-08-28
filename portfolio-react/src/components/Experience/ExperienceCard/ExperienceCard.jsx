@@ -3,32 +3,53 @@ import loldigitalLogo from "../../../assets/images/101digital-logo.png";
 export default function ExperienceCard() {
   return (
     <div className="card">
-      <div className="card-header">
-        <img src={loldigitalLogo} alt="Wespire Logo" className="logo" />
-        <div className="header-text">
-          <h2>WESPIRE</h2>
-          <h3>QA Developer</h3>
-        </div>
-      </div>
       <div className="card-content">
+        <div className="row">
+          <div className="col s12 m2">
+            <a
+              href="https://www.lightspeedhq.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                alt="Lightspeed logo"
+                src={loldigitalLogo}
+                className="responsive-img center-block"
+              />
+            </a>
+          </div>
+          <div className="col s12 m10">
+            <p>
+              <span className="card-title">
+                <a
+                  href="https://www.lightspeedhq.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="teal-text hoverline"
+                >
+                  Lightspeed
+                </a>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className="role brown-text">Principal Front-End Developer</div>
         <p>
-          SaaS platform that enables enterprise companies to build, run, and
-          measure their positive impact campaigns
+          <em className="grey-text">
+            The one-stop commerce platform for retail, hospitality, and golf
+            merchants around the world.
+          </em>
         </p>
         <ul>
-          <li>Improved accuracy, coverage, and speed of automated tests</li>
           <li>
-            Created an automated 'smoke test' using Ruby and the
-            CrossBrowserTesting API
-          </li>
-          <li>
-            Streamlined CLI and deployment, saving 10/hrs week and increasing
-            releases 5x
+            Focusing on front-end development and integrating Upserve's
+            best-in-class insights product into Lightspeed's flagship all-in-one
+            cloud-based POS system.
           </li>
         </ul>
       </div>
-      <div className="card-footer">
-        <p>May 2015 - Dec 2015 | Boston, MA</p>
+      <div className="card-action">
+        <span>Apr 2021 - Present | Providence, RI</span>
       </div>
     </div>
   );

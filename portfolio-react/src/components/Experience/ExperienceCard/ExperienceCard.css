@@ -1,45 +1,135 @@
 .card {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin-bottom: 60px;
   padding: 20px;
-  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  position: relative;
 }
 
-.card-header {
+.card .role {
+  font-size: 1.25rem;
+  color: #795548;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.card li a {
+  color: #333;
+  border-bottom: 2px solid #ffab40;
+  text-decoration: none;
+}
+
+.card li a:hover {
+  font-weight: 500;
+}
+
+.card .card-content {
+  padding-bottom: 30px;
+}
+
+.card .card-content p {
+  margin: 5px 0;
+}
+
+.card .card-title {
+  font-size: 24px;
+  color: #009688;
+  margin: 0;
+}
+
+.card .card-content .card-title {
+  line-height: 2.5rem;
+}
+
+.card i.right {
+  margin-left: 10px;
+}
+
+a.hoverline {
+  border-bottom: 3px solid transparent !important;
+  padding: 3px 3px 0 3px;
+  transition: 0.25s all;
+}
+
+a.hoverline:hover {
+  border-bottom: 3px solid #009688 !important;
+}
+
+.card-action {
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.card-action span {
+  font-size: 85%;
+  color: #666;
+}
+
+.card ul {
+  margin-bottom: 0;
+}
+
+.card ul li {
+  line-height: 1.6;
+  list-style-type: disc;
+  margin-left: 24px;
+}
+
+.card ul li li {
+  color: #666;
+  font-size: 13px;
+}
+
+.card img.responsive-img {
+  max-height: 60px;
+  margin-right: 10px;
+  border: none; /* Removed the border under the logo */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.col.s12.m2,
+.col.s12.m10 {
+  padding: 0;
+}
+
+.col.s12.m2 {
+  flex: 0 0 auto;
+}
+
+.col.s12.m10 {
+  flex: 1;
   display: flex;
   align-items: center;
 }
 
-.logo {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-}
+@media (max-width: 600px) {
+  .card .role {
+    position: static;
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 10px;
+  }
 
-.header-text {
-  flex: 1;
-}
-
-.card-content {
-  margin-top: 15px;
-}
-
-.card-footer {
-  text-align: left;
-  background-color: #f5f5f5;
-  padding: 10px;
-  margin-top: 15px;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .card-header {
+  .card .card-content .row {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .logo {
+  .card img.responsive-img {
+    max-height: 50px;
     margin-bottom: 10px;
+  }
+
+  .card .card-title {
+    font-size: 20px;
   }
 }
