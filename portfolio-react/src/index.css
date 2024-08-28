@@ -26,6 +26,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+.scroll-container {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.section {
+  min-height: 100vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

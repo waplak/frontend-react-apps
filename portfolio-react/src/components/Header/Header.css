@@ -1,4 +1,11 @@
 /* start apply styles to <header> */
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
 header {
   padding: 10px 35px;
   background-color: #d5f2ea;

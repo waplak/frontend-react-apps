@@ -1,31 +1,47 @@
+import React, { useState } from "react";
 import "../Nav/Nav.css";
-export default function Nav() {
+export default function Nav({ onNavigate }) {
+  const [activeMenuItem, setActiveMenuItem] = useState("");
+  const handleItemClick = (menuItem) => {
+    setActiveMenuItem(menuItem);
+    onNavigate(menuItem);
+  };
   return (
     <nav>
       <ul>
         <li>
-          <a href="#about">About</a>
+          <a
+            className={activeMenuItem === "about" ? "nav-link-active" : ""}
+            onClick={() => handleItemClick("about")}
+          >
+            About
+          </a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a
+            className={activeMenuItem === "experience" ? "nav-link-active" : ""}
+            onClick={() => handleItemClick("experience")}
+          >
+            Experience
+          </a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a onClick={() => onNavigate("projects")}>Projects</a>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <a onClick={() => onNavigate("skills")}>Skills</a>
         </li>
         <li>
-          <a href="#certifications">Certifications</a>
+          <a onClick={() => onNavigate("certifications")}>Certifications</a>
         </li>
         <li>
-          <a href="#education">Education</a>
+          <a onClick={() => onNavigate("education")}>Education</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a onClick={() => onNavigate("contact")}>Contact</a>
         </li>
         <li>
-          <a href="#resume">Resume</a>
+          <a onClick={() => onNavigate("resume")}>Resume</a>
         </li>
       </ul>
     </nav>
