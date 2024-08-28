@@ -1,0 +1,53 @@
+/* start apply styles to <nav> */
+nav {
+  margin: 7px 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+/* button styling */
+
+nav ul li a {
+  padding: 10px 15px;
+  font-weight: normal;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+nav ul li a:hover {
+  color: #e2190e;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+nav ul li a:active {
+  color: #dbf361;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+  nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+}
