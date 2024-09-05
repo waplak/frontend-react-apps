@@ -1,19 +1,18 @@
 import "../ExperienceCard/ExperienceCard.css";
-import loldigitalLogo from "../../../assets/images/101digital-logo.png";
-export default function ExperienceCard() {
+export default function ExperienceCard({ experience }) {
   return (
     <div className="card">
       <div className="card-content">
-        <div className="row">
+        <div className="card-header">
           <div className="col s12 m2">
             <a
-              href="https://www.lightspeedhq.com/"
+              href={experience.websiteUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
                 alt="Lightspeed logo"
-                src={loldigitalLogo}
+                src={experience.companyLogo}
                 className="responsive-img center-block"
               />
             </a>
@@ -22,34 +21,33 @@ export default function ExperienceCard() {
             <p>
               <span className="card-title">
                 <a
-                  href="https://www.lightspeedhq.com/"
+                  href={experience.websiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="teal-text hoverline"
                 >
-                  Lightspeed
+                  {experience.companyName}
                 </a>
               </span>
             </p>
           </div>
         </div>
-        <div className="role brown-text">Principal Front-End Developer</div>
-        <p>
-          <em className="grey-text">
-            The one-stop commerce platform for retail, hospitality, and golf
-            merchants around the world.
-          </em>
-        </p>
-        <ul>
-          <li>
-            Focusing on front-end development and integrating Upserve's
-            best-in-class insights product into Lightspeed's flagship all-in-one
-            cloud-based POS system.
-          </li>
-        </ul>
+        <div className="role">{experience.role}</div>
+        <div className="companey-details">
+          <p>
+            <em className="companey-description">
+              {experience.companyDescription}
+            </em>
+          </p>
+          <ul>
+            {experience.responsibilities.map((resp) => (
+              <li className="responsibility">{resp}</li>
+            ))}
+          </ul>
+        </div>
       </div>
       <div className="card-action">
-        <span>Apr 2021 - Present | Providence, RI</span>
+        <span>{experience.timePeriod}</span>
       </div>
     </div>
   );

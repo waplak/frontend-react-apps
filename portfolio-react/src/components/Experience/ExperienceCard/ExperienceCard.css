@@ -3,70 +3,66 @@
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  background-color: #666565;
   position: relative;
 }
+.card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #f0e6e6;
+}
 
-.card .role {
+.card-header a {
+  border: none;
+}
+
+.role {
   font-size: 1.25rem;
-  color: #795548;
+  color: #ffffff;
   position: absolute;
   right: 20px;
   top: 20px;
 }
 
-.card li a {
-  color: #333;
-  border-bottom: 2px solid #ffab40;
-  text-decoration: none;
+.companey-description {
+  font-size: 15px;
+  color: #dfe2ef;
 }
 
-.card li a:hover {
-  font-weight: 500;
+.responsibility {
+  font-size: 15px;
+  color: #ffffff;
 }
 
-.card .card-content {
+.card-content {
   padding-bottom: 30px;
 }
 
-.card .card-content p {
+.card-content p {
   margin: 5px 0;
 }
 
-.card .card-title {
+.companey-details {
+  padding-top: 10px;
+}
+
+.card-title a {
   font-size: 24px;
-  color: #009688;
+  color: #ffffff;
   margin: 0;
 }
 
-.card .card-content .card-title {
-  line-height: 2.5rem;
-}
-
-.card i.right {
-  margin-left: 10px;
-}
-
-a.hoverline {
-  border-bottom: 3px solid transparent !important;
-  padding: 3px 3px 0 3px;
-  transition: 0.25s all;
-}
-
-a.hoverline:hover {
-  border-bottom: 3px solid #009688 !important;
-}
-
 .card-action {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: #3d3c3c;
   padding: 10px 0;
+  padding-left: 10px;
   border-top: 1px solid #ddd;
 }
 
 .card-action span {
   font-size: 85%;
-  color: #666;
+  color: #e5e2e2;
 }
 
 .card ul {
@@ -90,12 +86,6 @@ a.hoverline:hover {
   border: none; /* Removed the border under the logo */
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .col.s12.m2,
 .col.s12.m10 {
   padding: 0;
@@ -112,14 +102,14 @@ a.hoverline:hover {
 }
 
 @media (max-width: 600px) {
-  .card .role {
+  .role {
     position: static;
     font-size: 1rem;
     text-align: right;
     margin-top: 10px;
   }
 
-  .card .card-content .row {
+  .card-header {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -129,7 +119,7 @@ a.hoverline:hover {
     margin-bottom: 10px;
   }
 
-  .card .card-title {
+  .card-title {
     font-size: 20px;
   }
 }

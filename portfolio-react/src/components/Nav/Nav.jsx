@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Nav/Nav.css";
+import "./Nav.css";
 export default function Nav({ onNavigate }) {
   const [activeMenuItem, setActiveMenuItem] = useState("");
   const handleItemClick = (menuItem) => {

@@ -1,6 +1,6 @@
 import Nav from "../Nav/Nav";
 import { PROFILE } from "../../data/data";
-import "../Header/Header.css";
+import "./Header.css";
 export default function Header({ onNavigate }) {
   return (
     <div className="header-container">

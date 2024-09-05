@@ -2,7 +2,7 @@ import "../HomePage/Homepage.css";
 import { PROFILE } from "../../data/data";
 export default function HomePage() {
   return (
-    <section className="homepage">
+    <section className="home-section">
       <div className="content">
         <p className="intro">Hi, my name is</p>
         <h1 className="name">{PROFILE.name}.</h1>
