@@ -1,7 +1,7 @@
 import Nav from "../Nav/Nav";
 import { PROFILE } from "../../data/data";
 import "./Header.css";
-export default function Header({ onNavigate }) {
+export default function Header({ onNavigate, activeMenuItem }) {
   return (
     <div className="header-container">
       <section>
@@ -10,7 +10,7 @@ export default function Header({ onNavigate }) {
             <h1>{PROFILE.name}</h1>
           </div>
           <div>
-            <Nav onNavigate={onNavigate} />
+            <Nav onNavigate={onNavigate} activeMenuItem={activeMenuItem} />
           </div>
         </header>
       </section>

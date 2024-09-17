@@ -1,11 +1,13 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import "./index.css";
 import Header from "./components/Header/Header";
 import HomePage from "./components/HomePage/HomePage";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
+import Skills from "./components/Skills/Skills";
 
 function App() {
+  const [activeMenuItem, setActiveMenuItem] = useState("");
   const aboutRef = useRef(null);
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
@@ -19,17 +21,22 @@ function App() {
     const targetSection = window.document.getElementById(section);
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: "smooth" });
+      setActiveMenuItem(section);
     }
   };
+
   return (
     <div>
-      <Header onNavigate={handleNavigate} />
+      <Header onNavigate={handleNavigate} activeMenuItem={activeMenuItem} />
       <HomePage />
       <section ref={aboutRef} id="about">
         <About />
       </section>
       <section ref={experienceRef} id="experience">
         <Experience />
+      </section>
+      <section ref={experienceRef} id="experience">
+        <Skills />
       </section>
     </div>
   );

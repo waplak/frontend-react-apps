@@ -3,6 +3,17 @@ import l0lDigitalLogo from "../assets/images/101digital-logo.png";
 import inovaITLogo from "../assets/images/inovaIT.png";
 import axiataLogo from "../assets/images/axiata.png";
 
+export const MENU_ITEMS = [
+  { name: "About", section: "about" },
+  { name: "Experience", section: "experience" },
+  //{ name: "Projects", section: "projects" },
+  { name: "Skills", section: "skills" },
+  { name: "Certifications", section: "certifications" },
+  { name: "Education", section: "education" },
+  { name: "Contact", section: "contact" },
+  { name: "Resume", section: "resume" },
+];
+
 export const PROFILE = {
   name: "Pamitha Lakbodha",
   firstName: "Pamitha",
@@ -82,5 +93,38 @@ export const EXPERIENCE = [
       "Contributed to front end development using React.js, enhancing user interfaces and improving user experience for web applications.",
     ],
     timePeriod: "August 2015 - September 2022",
+  },
+];
+
+export const SKILLS = [
+  {
+    name: "React",
+    imgSrc: "path_to_react_logo",
+    alt: "React Logo",
+  },
+  {
+    name: "Javascript",
+    imgSrc: "path_to_javascript_logo",
+    alt: "Javascript Logo",
+  },
+  {
+    name: "jQuery",
+    imgSrc: "path_to_jquery_logo",
+    alt: "jQuery Logo",
+  },
+  {
+    name: "Angular",
+    imgSrc: "path_to_angular_logo",
+    alt: "Angular Logo",
+  },
+  {
+    name: "Node",
+    imgSrc: "path_to_node_logo",
+    alt: "Node Logo",
+  },
+  {
+    name: "Ionic",
+    imgSrc: "path_to_ionic_logo",
+    alt: "Ionic Logo",
   },
 ];

@@ -1,0 +1,76 @@
+/* TechIcons.css */
+.tech-section {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tech-section h2 {
+  color: #815e4a; /* Matching the brown color for the heading */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping of items on smaller screens */
+  gap: 20px; /* Adds space between items */
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.icon p {
+  font-size: 16px;
+  color: #333; /* Dark grey text color */
+  margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .icons-container {
+    justify-content: center;
+  }
+
+  .icon img {
+    width: 50px; /* Smaller image size for tablet/mobile */
+    height: 50px;
+  }
+
+  .icon p {
+    font-size: 14px; /* Smaller text size for tablet/mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .icons-container {
+    flex-direction: column; /* Stack items vertically on mobile screens */
+  }
+
+  .icon {
+    margin-bottom: 20px;
+  }
+
+  .icon img {
+    width: 40px; /* Even smaller image size for small mobile devices */
+    height: 40px;
+  }
+
+  .icon p {
+    font-size: 12px; /* Smaller text size for small mobile devices */
+  }
+}
