@@ -1,0 +1,121 @@
+.certifications-section {
+  padding: 20px;
+  background-color: #000000;
+  color: #ccd6f6;
+  text-align: left;
+}
+
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.certification-card {
+  background-color: #444445;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s, border-color 0.3s;
+  position: relative;
+  margin: 0 40px;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  border-color: #64ffda;
+}
+
+.certification-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.org-image {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.certification-card h2 {
+  font-size: 1.5rem;
+  color: #13bd95;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.organization {
+  font-weight: 600;
+  color: #a5a5a5;
+  margin: 5px 0;
+}
+
+.issue-expiry {
+  font-size: 0.9rem;
+  color: #ccd6f6;
+  margin: 3px 0;
+}
+
+.view-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #64ffda;
+  transition: color 0.3s;
+}
+
+.view-button:hover {
+  color: #23b5f3;
+}
+
+@media (max-width: 768px) {
+  .certification-card {
+    padding: 10px;
+  }
+
+  .certification-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .org-image {
+    width: 30px;
+  }
+
+  .issue-expiry {
+    font-size: 0.85rem;
+  }
+
+  .view-button {
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certification-card {
+    padding: 8px;
+  }
+
+  .certification-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .org-image {
+    width: 25px;
+  }
+
+  .issue-expiry {
+    font-size: 0.8rem;
+  }
+
+  .view-button {
+    top: 5px;
+    right: 5px;
+  }
+}

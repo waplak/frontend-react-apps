@@ -2,6 +2,8 @@ import profileImage from "../assets/images/profile-image.jpg";
 import l0lDigitalLogo from "../assets/images/101digital-logo.png";
 import inovaITLogo from "../assets/images/inovaIT.png";
 import axiataLogo from "../assets/images/axiata.png";
+import awsLogo from "../assets/images/aws.png";
+import udemyLogo from "../assets/images/udemy.png";
 
 export const MENU_ITEMS = [
   { name: "About", section: "about" },
@@ -173,5 +175,35 @@ export const SKILLS = [
       { name: "SOAP", icon: "fas fa-plug" },
       { name: "REST", icon: "fas fa-plug" },
     ],
+  },
+];
+
+export const CERTIFICATIONS = [
+  {
+    name: "AWS Certified Solutions Architect – Associate",
+    organization: "Amazon Web Services (AWS)",
+    organizationLogo: awsLogo,
+    issueDate: "June 2024",
+    expirationDate: "June 2027",
+    viewLink:
+      "https://www.credly.com/badges/35075bd4-4d19-4d33-ac84-d6e2cab1e510/linked_in_profile",
+  },
+  {
+    name: "Ultimate AWS Certified Solutions Architect Associate SAA-C03",
+    organization: "Udemy",
+    organizationLogo: udemyLogo,
+    issueDate: "July 2024",
+    expirationDate: "N/A",
+    viewLink:
+      "https://www.udemy.com/certificate/UC-75de9ae8-3d5a-4dfa-aaee-9ac503a8336e/",
+  },
+  {
+    name: "React - The Complete Guide 2024 (incl. Next.js, Redux)",
+    organization: "Udemy",
+    organizationLogo: udemyLogo,
+    issueDate: "Oct 2024",
+    expirationDate: "N/A",
+    viewLink:
+      "https://www.udemy.com/certificate/UC-1e562bb1-cadc-413e-9534-3613f46d1808/",
   },
 ];

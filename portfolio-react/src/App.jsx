@@ -5,6 +5,7 @@ import HomePage from "./components/HomePage/HomePage";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Skills from "./components/Skills/Skills";
+import Certifications from "./components/Certifications/Certifications";
 
 function App() {
   const [activeMenuItem, setActiveMenuItem] = useState("");
@@ -37,6 +38,9 @@ function App() {
       </section>
       <section ref={skillsRef} id="skills">
         <Skills />
+      </section>
+      <section ref={certificationsRef} id="certifications">
+        <Certifications />
       </section>
     </div>
   );
