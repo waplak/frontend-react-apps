@@ -1,16 +1,17 @@
 .card {
   margin-bottom: 30px;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #444445;
   border-radius: 8px;
-  background-color: #666565;
+  background-color: #000000;
   position: relative;
+  font-family: "Arial", sans-serif;
 }
 .card-header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border-bottom: 1px solid #f0e6e6;
+  border-bottom: none;
 }
 
 .card-header a {
@@ -19,7 +20,7 @@
 
 .role {
   font-size: 1.25rem;
-  color: #ffffff;
+  color: #64ffda;
   position: absolute;
   right: 20px;
   top: 20px;
@@ -27,42 +28,34 @@
 
 .companey-description {
   font-size: 15px;
-  color: #dfe2ef;
+  color: #ccd6f6;
 }
 
 .responsibility {
   font-size: 15px;
-  color: #ffffff;
+  color: #8892b0;
 }
 
 .card-content {
   padding-bottom: 30px;
 }
 
-.card-content p {
-  margin: 5px 0;
-}
-
-.companey-details {
-  padding-top: 10px;
-}
-
 .card-title a {
   font-size: 24px;
-  color: #ffffff;
+  color: #4cd4b3;
   margin: 0;
 }
 
 .card-action {
-  background-color: #3d3c3c;
+  background-color: rgba(100, 255, 218, 0.1);
   padding: 10px 0;
   padding-left: 10px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #444445;
 }
 
 .card-action span {
   font-size: 85%;
-  color: #e5e2e2;
+  color: #ccd6f6;
 }
 
 .card ul {
@@ -73,32 +66,13 @@
   line-height: 1.6;
   list-style-type: disc;
   margin-left: 24px;
-}
-
-.card ul li li {
-  color: #666;
-  font-size: 13px;
+  color: #ccd6f6;
 }
 
 .card img.responsive-img {
   max-height: 60px;
   margin-right: 10px;
-  border: none; /* Removed the border under the logo */
-}
-
-.col.s12.m2,
-.col.s12.m10 {
-  padding: 0;
-}
-
-.col.s12.m2 {
-  flex: 0 0 auto;
-}
-
-.col.s12.m10 {
-  flex: 1;
-  display: flex;
-  align-items: center;
+  border: none;
 }
 
 @media (max-width: 600px) {

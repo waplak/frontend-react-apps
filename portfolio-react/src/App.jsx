@@ -35,7 +35,7 @@ function App() {
       <section ref={experienceRef} id="experience">
         <Experience />
       </section>
-      <section ref={experienceRef} id="experience">
+      <section ref={skillsRef} id="skills">
         <Skills />
       </section>
     </div>

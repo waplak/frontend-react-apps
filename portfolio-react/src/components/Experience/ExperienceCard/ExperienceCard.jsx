@@ -40,8 +40,10 @@ export default function ExperienceCard({ experience }) {
             </em>
           </p>
           <ul>
-            {experience.responsibilities.map((resp) => (
-              <li className="responsibility">{resp}</li>
+            {experience.responsibilities.map((resp, index) => (
+              <li key={index} className="responsibility">
+                {resp}
+              </li>
             ))}
           </ul>
         </div>

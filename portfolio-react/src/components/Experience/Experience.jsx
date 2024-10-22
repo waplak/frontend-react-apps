@@ -7,8 +7,8 @@ export default function Experience() {
       <div className="header-section">
         <h1 className="section-title">Experience</h1>
       </div>
-      {EXPERIENCE.map((exp) => (
-        <ExperienceCard experience={exp} />
+      {EXPERIENCE.map((exp, index) => (
+        <ExperienceCard key={index} experience={exp} />
       ))}
     </section>
   );

@@ -98,33 +98,80 @@ export const EXPERIENCE = [
 
 export const SKILLS = [
   {
-    name: "React",
-    imgSrc: "path_to_react_logo",
-    alt: "React Logo",
+    category: "Programming Languages",
+    skills: [
+      { name: "Java", icon: "fab fa-java" },
+      { name: "JavaScript", icon: "fab fa-js-square" },
+      { name: "HTML", icon: "fab fa-html5" },
+      { name: "CSS", icon: "fab fa-css3-alt" },
+      { name: "Android", icon: "fab fa-android" },
+    ],
   },
   {
-    name: "Javascript",
-    imgSrc: "path_to_javascript_logo",
-    alt: "Javascript Logo",
+    category: "Frameworks & Libraries",
+    skills: [
+      { name: "Spring Framework", icon: "fab fa-pagelines" }, // Combine Spring-related skills
+      { name: "React.js", icon: "fab fa-react" },
+      { name: "Hibernate", icon: "fas fa-cogs" },
+      { name: "OpenAPI", icon: "fas fa-plug" },
+      { name: "Swagger", icon: "fas fa-file-signature" },
+      { name: "ADF", icon: "fas fa-warehouse" },
+    ],
   },
   {
-    name: "jQuery",
-    imgSrc: "path_to_jquery_logo",
-    alt: "jQuery Logo",
+    category: "Data Technologies",
+    skills: [
+      { name: "PostgreSQL", icon: "fas fa-database" },
+      { name: "MySQL", icon: "fas fa-database" },
+      { name: "Oracle", icon: "fas fa-database" },
+      { name: "Redis", icon: "fas fa-database" },
+      { name: "Kafka", icon: "fas fa-stream" },
+    ],
   },
   {
-    name: "Angular",
-    imgSrc: "path_to_angular_logo",
-    alt: "Angular Logo",
+    category: "Cloud & DevOps",
+    skills: [
+      { name: "AWS", icon: "fab fa-aws" },
+      { name: "Docker", icon: "fab fa-docker" },
+      { name: "Jenkins", icon: "fas fa-toolbox" },
+      { name: "Git", icon: "fab fa-git" },
+      { name: "SVN", icon: "fas fa-code-branch" },
+      { name: "CI/CD", icon: "fas fa-rocket" },
+    ],
   },
   {
-    name: "Node",
-    imgSrc: "path_to_node_logo",
-    alt: "Node Logo",
+    category: "Development Tools",
+    skills: [
+      { name: "Maven", icon: "fas fa-tools" },
+      { name: "Gradle", icon: "fas fa-cogs" },
+      { name: "IntelliJ IDEA", icon: "fas fa-lightbulb" },
+      { name: "Eclipse", icon: "fas fa-moon" },
+      { name: "Spring Tool Suite (STS)", icon: "fas fa-code" },
+      { name: "Android Studio", icon: "fab fa-android" },
+      { name: "VS Code", icon: "fab fa-code" },
+    ],
   },
   {
-    name: "Ionic",
-    imgSrc: "path_to_ionic_logo",
-    alt: "Ionic Logo",
+    category: "Project Management & Collaboration",
+    skills: [
+      { name: "Atlassian Jira", icon: "fab fa-atlassian" },
+      { name: "Atlassian Confluence", icon: "fab fa-atlassian" },
+    ],
+  },
+  {
+    category: "Data Analysis & Visualization",
+    skills: [
+      { name: "Kibana", icon: "fas fa-chart-line" },
+      { name: "SonarQube", icon: "fas fa-chart-bar" },
+      { name: "WSO2 Products", icon: "fas fa-cogs" },
+      { name: "Keycloak", icon: "fas fa-lock" },
+    ],
+  },
+  {
+    category: "Web Services & APIs",
+    skills: [
+      { name: "SOAP", icon: "fas fa-plug" },
+      { name: "REST", icon: "fas fa-plug" },
+    ],
   },
 ];

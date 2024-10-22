@@ -1,18 +1,10 @@
-import { SKILLS } from "../../../data/data";
 import "./SkillsCard.css";
 
-export default function SkillsCard() {
+export default function SkillsCard({ name, icon }) {
   return (
-    <div className="tech-section">
-      <h2>Javascript</h2>
-      <div className="icons-container">
-        {SKILLS.map((item, index) => (
-          <div className="icon" key={index}>
-            <img src={item.imgSrc} alt={item.alt} />
-            <p>{item.name}</p>
-          </div>
-        ))}
-      </div>
+    <div className="skills-card">
+      <i className={`${icon} skill-icon`}></i>
+      <p>{name}</p>
     </div>
   );
 }

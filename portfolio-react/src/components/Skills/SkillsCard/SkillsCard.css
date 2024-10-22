@@ -1,76 +1,58 @@
-/* TechIcons.css */
-.tech-section {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 20px;
-  background-color: #f9f9f9; /* Light grey background */
-  padding: 20px;
+.skills-card {
+  background-color: #444445;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(100, 255, 218, 0.1);
   border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, border-color 0.3s;
 }
 
-.tech-section h2 {
-  color: #815e4a; /* Matching the brown color for the heading */
-  font-size: 24px;
-  margin-bottom: 20px;
+.skills-card:hover {
+  transform: translateY(-5px);
+  border-color: #64ffda;
 }
 
-.icons-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; /* Allows wrapping of items on smaller screens */
-  gap: 20px; /* Adds space between items */
-}
-
-.icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.icon img {
-  width: 60px;
-  height: 60px;
+.skill-icon {
+  font-size: 2rem;
   margin-bottom: 10px;
+  color: #23b5f3;
 }
 
-.icon p {
-  font-size: 16px;
-  color: #333; /* Dark grey text color */
-  margin: 0;
+.skills-card:hover .skill-icon {
+  color: #64ffda;
 }
 
-/* Responsive Styling */
+.skills-card p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ccd6f6;
+}
+
 @media (max-width: 768px) {
-  .icons-container {
-    justify-content: center;
+  .skills-card {
+    padding: 10px;
   }
 
-  .icon img {
-    width: 50px; /* Smaller image size for tablet/mobile */
-    height: 50px;
+  .skill-icon {
+    font-size: 1.8rem;
   }
 
-  .icon p {
-    font-size: 14px; /* Smaller text size for tablet/mobile */
+  .skills-card p {
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .icons-container {
-    flex-direction: column; /* Stack items vertically on mobile screens */
+  .skills-card {
+    padding: 8px;
   }
 
-  .icon {
-    margin-bottom: 20px;
+  .skill-icon {
+    font-size: 1.5rem;
   }
 
-  .icon img {
-    width: 40px; /* Even smaller image size for small mobile devices */
-    height: 40px;
-  }
-
-  .icon p {
-    font-size: 12px; /* Smaller text size for small mobile devices */
+  .skills-card p {
+    font-size: 1rem;
   }
 }
