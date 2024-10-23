@@ -8,10 +8,9 @@ import udemyLogo from "../assets/images/udemy.png";
 export const MENU_ITEMS = [
   { name: "About", section: "about" },
   { name: "Experience", section: "experience" },
-  //{ name: "Projects", section: "projects" },
+  { name: "Projects", section: "projects" },
   { name: "Skills", section: "skills" },
   { name: "Certifications", section: "certifications" },
-  { name: "Education", section: "education" },
   { name: "Contact", section: "contact" },
   { name: "Resume", section: "resume" },
 ];
@@ -207,3 +206,18 @@ export const CERTIFICATIONS = [
       "https://www.udemy.com/certificate/UC-1e562bb1-cadc-413e-9534-3613f46d1808/",
   },
 ];
+
+export const CONTACT = {
+  email: "pamitha99@gmail.com",
+  github: "https://github.com/waplak",
+  linkedin: "https://www.linkedin.com/in/waplak/",
+  icons: {
+    email: "fas fa-envelope",
+    github: "fab fa-github",
+    linkedin: "fab fa-linkedin",
+  },
+};
+
+export const RESUME = {
+  link: "https://docs.google.com/document/d/1-LteOSr8uilo7tgdMfwhghQnJ8CeC-euFtbIylqVHZU/view?tab=t.0",
+};

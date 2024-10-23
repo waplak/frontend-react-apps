@@ -6,6 +6,8 @@ import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Skills from "./components/Skills/Skills";
 import Certifications from "./components/Certifications/Certifications";
+import Contact from "./components/Contact/Contact";
+import Resume from "./components/Resume/Resume";
 
 function App() {
   const [activeMenuItem, setActiveMenuItem] = useState("");
@@ -14,7 +16,6 @@ function App() {
   const projectsRef = useRef(null);
   const skillsRef = useRef(null);
   const certificationsRef = useRef(null);
-  const educationRef = useRef(null);
   const contactRef = useRef(null);
   const resumeRef = useRef(null);
 
@@ -41,6 +42,12 @@ function App() {
       </section>
       <section ref={certificationsRef} id="certifications">
         <Certifications />
+      </section>
+      <section ref={contactRef} id="contact">
+        <Contact />
+      </section>
+      <section ref={contactRef} id="resume">
+        <Resume />
       </section>
     </div>
   );

@@ -1,0 +1,82 @@
+.resume-section {
+  padding: 20px;
+  background-color: #000000;
+  color: #ccd6f6;
+  text-align: left;
+}
+
+.resume-card {
+  background-color: #444445;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 10px;
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+  border-color: #64ffda;
+}
+
+.resume-item {
+  display: flex;
+  align-items: center;
+}
+
+.resume-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ccd6f6;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.resume-link i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #64ffda;
+}
+
+.resume-link:hover {
+  color: #64ffda;
+}
+
+.resume-link:hover i {
+  color: #23b5f3;
+}
+
+@media (max-width: 768px) {
+  .resume-card {
+    margin: 0 20px;
+    padding: 15px;
+  }
+
+  .resume-link i {
+    font-size: 1.3rem;
+  }
+
+  .resume-link span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-card {
+    margin: 0 10px;
+    padding: 10px;
+  }
+
+  .resume-link i {
+    font-size: 1.1rem;
+  }
+
+  .resume-link span {
+    font-size: 0.9rem;
+  }
+}
