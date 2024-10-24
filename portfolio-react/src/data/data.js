@@ -7,6 +7,7 @@ import udemyLogo from "../assets/images/udemy.png";
 import ecommerce from "../assets/images/ecommerce.jpg";
 import dekma from "../assets/images/dekma.png";
 import portfolio from "../assets/images/portfolio.jpg";
+import headerImage from "../assets/cover/header.jpg";
 
 export const MENU_ITEMS = [
   { name: "About", section: "about" },
@@ -19,6 +20,7 @@ export const MENU_ITEMS = [
 ];
 
 export const PROFILE = {
+  headerImage: headerImage,
   name: "Pamitha Lakbodha",
   firstName: "Pamitha",
   subtitle: "I design and develop web applications",

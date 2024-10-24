@@ -5,7 +5,11 @@ export default function Header({ onNavigate, activeMenuItem }) {
   return (
     <div className="header-container">
       <section>
-        <header>
+        <header
+          style={{
+            backgroundImage: `url(${PROFILE.headerImage})`,
+          }}
+        >
           <div>
             <h1>{PROFILE.name}</h1>
           </div>
