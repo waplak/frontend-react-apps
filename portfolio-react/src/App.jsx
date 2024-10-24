@@ -8,6 +8,7 @@ import Skills from "./components/Skills/Skills";
 import Certifications from "./components/Certifications/Certifications";
 import Contact from "./components/Contact/Contact";
 import Resume from "./components/Resume/Resume";
+import Project from "./components/Projects/Project";
 
 function App() {
   const [activeMenuItem, setActiveMenuItem] = useState("");
@@ -37,6 +38,9 @@ function App() {
       <section ref={experienceRef} id="experience">
         <Experience />
       </section>
+      <section ref={projectsRef} id="projects">
+        <Project />
+      </section>
       <section ref={skillsRef} id="skills">
         <Skills />
       </section>
@@ -46,7 +50,7 @@ function App() {
       <section ref={contactRef} id="contact">
         <Contact />
       </section>
-      <section ref={contactRef} id="resume">
+      <section ref={resumeRef} id="resume">
         <Resume />
       </section>
     </div>

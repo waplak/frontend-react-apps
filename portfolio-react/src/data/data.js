@@ -4,6 +4,9 @@ import inovaITLogo from "../assets/images/inovaIT.png";
 import axiataLogo from "../assets/images/axiata.png";
 import awsLogo from "../assets/images/aws.png";
 import udemyLogo from "../assets/images/udemy.png";
+import ecommerce from "../assets/images/ecommerce.jpg";
+import dekma from "../assets/images/dekma.png";
+import portfolio from "../assets/images/portfolio.jpg";
 
 export const MENU_ITEMS = [
   { name: "About", section: "about" },
@@ -94,6 +97,43 @@ export const EXPERIENCE = [
       "Contributed to front end development using React.js, enhancing user interfaces and improving user experience for web applications.",
     ],
     timePeriod: "August 2015 - September 2022",
+  },
+];
+
+export const PROJECTS = [
+  {
+    title: "Backend for E-commerce Website",
+    description:
+      "This project is a scalable eCommerce backend developed with Spring Boot, utilizing a microservice architecture. It features dedicated services for customer management, product listings, order processing, payment handling, and notifications. Leveraging Docker for containerization and implementing a Config Server, Discovery Service, and Gateway Service, this solution ensures high availability, seamless integration, and efficient routing of requests. The architecture supports a robust and responsive online shopping experience.",
+    image: ecommerce,
+    technologies: [
+      "Java 17",
+      "Spring Boot",
+      "Microservice",
+      "Spring JPA",
+      "Postgresql",
+      "Docker",
+      "Kafka",
+      "REST API",
+    ],
+    github: "https://github.com/waplak/ecommerce-microservices-platform",
+  },
+  {
+    title: "Android Application for Dekma Institute",
+    description:
+      "The Dekma Institute Mobile Application is an Android app that enables students to easily access their exam results. This user-friendly platform allows secure login and real-time score viewing, enhancing the academic experience. Key features include secure authentication, detailed result viewing, and push notifications for updates. Developed in Android Studio with a focus on responsive design, it integrates with RESTful APIs for data retrieval, aiming to improve communication between the institute and students while efficiently managing exam results.",
+    image: dekma,
+    technologies: ["Java 8", "Android", "XML", "JWT ", "RESTful APIs"],
+    github: "https://github.com/waplak/Android_DakmaPro",
+  },
+  {
+    title: "Portfolio Websites",
+    description:
+      "My portfolio website showcases my skills, experience, and projects as a software engineer. Designed with a clean and modern interface, it highlights my expertise in Java backend development, Spring Boot, and full-stack application design. Key features include a detailed overview of my professional background, interactive project showcases with descriptions and technologies used, and a contact form for potential collaborations. Built using responsive web design principles, the site ensures an optimal viewing experience across devices, effectively demonstrating my capabilities and passion for software development.",
+    image: portfolio,
+    technologies: ["React.js", "HTML", "CSS", "Javascript "],
+    github:
+      "https://github.com/waplak/frontend-react-apps/tree/main/portfolio-react",
   },
 ];
 
