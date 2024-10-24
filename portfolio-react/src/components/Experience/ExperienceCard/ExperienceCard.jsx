@@ -1,4 +1,4 @@
-import "../ExperienceCard/ExperienceCard.css";
+import "./ExperienceCard.css";
 export default function ExperienceCard({ experience }) {
   return (
     <div className="card">

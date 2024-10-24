@@ -1,4 +1,4 @@
-import "../About/About.css";
+import "./About.css";
 import { ABOUT_ME } from "../../data/data";
 export default function About() {
   return (

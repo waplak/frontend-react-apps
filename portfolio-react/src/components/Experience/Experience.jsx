@@ -1,4 +1,4 @@
-import "../Experience/Experience.css";
+import "./Experience.css";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
 import { EXPERIENCE } from "../../data/data.js";
 export default function Experience() {

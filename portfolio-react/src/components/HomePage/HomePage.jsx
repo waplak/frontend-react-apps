@@ -1,4 +1,4 @@
-import "../HomePage/Homepage.css";
+import "./Homepage.css";
 import { PROFILE } from "../../data/data";
 export default function HomePage() {
   return (
