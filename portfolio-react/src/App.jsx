@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       <Header onNavigate={handleNavigate} activeMenuItem={activeMenuItem} />
-      <HomePage />
+      <HomePage onNavigate={handleNavigate} />
       <section ref={aboutRef} id="about">
         <About />
       </section>

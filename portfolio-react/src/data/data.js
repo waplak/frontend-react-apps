@@ -36,11 +36,11 @@ export const ABOUT_ME = {
   description: [
     "I am a Software Engineer with 8+ years of experience in Java development. I specialize in designing and deploying scalable software solutions, leveraging Java, Spring, React.js, ADF, and more to create impactful digital products.",
     `With a Bachelor's degree in Computer Science from 
-    <a href="https://ucsc.cmb.ac.lk" target="_blank" rel="noopener noreferrer">
-    University of Colombo School of Computing(UCSC)</a> and an 
-    <a href="https://www.credly.com/badges/35075bd4-4d19-4d33-ac84-d6e2cab1e510/public_url"
-    target="_blank" rel="noopener noreferrer">AWS Certified Solutions Architect Associate</a>, I focus on optimizing distributed systems and implementing clean, reliable code. My expertise spans the full Software Development Life Cycle (SDLC), Agile methodologies, and Microservice Architecture, with hands-on experience in unit testing, data analysis, and cloud solutions.`,
-    "Currently, I’m dedicated to creating robust software solutions. Although I'm not available for freelance work, feel free to connect—I'm always open to discussing technology and solving challenging problems.",
+      <a href="https://ucsc.cmb.ac.lk" target="_blank" rel="noopener noreferrer">
+      University of Colombo School of Computing (UCSC)</a> and an 
+      <a href="https://www.credly.com/badges/35075bd4-4d19-4d33-ac84-d6e2cab1e510/public_url"
+      target="_blank" rel="noopener noreferrer">AWS Certified Solutions Architect Associate</a>, I focus on optimizing distributed systems and implementing clean, reliable code. My expertise spans the full Software Development Life Cycle (SDLC), Agile methodologies, and Microservice Architecture, with hands-on experience in unit testing, data analysis, and cloud solutions.`,
+    "Currently, I’m dedicated to creating robust software solutions and open to new opportunities and freelance work. Feel free to connect—I'm always open to discussing technology and solving challenging problems.",
     "Cheers, Pamitha!",
   ],
   contactEmail: "pamitha99@gmail.com",

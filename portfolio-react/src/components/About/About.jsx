@@ -27,7 +27,6 @@ export default function About() {
             >
               {ABOUT_ME.contactEmail}
             </a>
-            .
           </p>
         </div>
       </div>
